@@ -1,0 +1,46 @@
+<h1>Welcome</h1>
+<h2>This is not the web design decal</h2>
+<h3>:_____________)</h3>
+
+<%= link_to "Make a new form", albums_new_path %>
+
+<table>
+  <tr>
+    <td><b>Name</b></td>
+    <td><b>Email</b></td>
+    <td><b>Age</b></td>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name%></td>
+      <td><%= user.email%></td>
+      <td><%= user.age%></td>
+    </tr>
+  <% end %>
+</table>
+
+<table>
+  <tr>
+    <td><b>Task</b></td>
+    <td><b>Finished</b></td>
+  </tr>
+  <% @todos.each do |todo| %>
+    <tr>
+      <td><%= todo.tasks%></td>
+      <td><%= todo.finished%></td>
+    </tr>
+  <% end %>
+</table>
+
+<table>
+  <tr>
+    <td><b>Cat</b></td>
+  </tr>
+  <% @cats.each do |cat| %>
+    <tr>
+      <td><%= cat.name%></td>
+    </tr>
+  <% end %>
+</table>
+
+
